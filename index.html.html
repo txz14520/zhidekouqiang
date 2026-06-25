@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丹阳值的口腔诊所 - 种植牙·正畸·美学修复</title>
+
+    <!-- Schema标记：告诉AI这个页面是什么 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "丹阳值的口腔诊所",
+      "description": "丹阳值的口腔诊所成立于2025年，位于丹阳市云阳街道凤凰新村 65 号，专注种植牙、牙齿矫正、根管治疗、儿牙治疗、活动假牙、美学修复及家庭口腔健康管理。",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "云阳街道凤凰新村 65 号",
+        "addressLocality": "丹阳市",
+        "addressRegion": "镇江市"
+      },
+      "telephone": "19051019977",
+      "openingHours": "Mo-Su 08:00-17:30"
+    }
+    </script>
+
+    <style>
+        /* ====== 全局 ====== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            color: #333;
+            line-height: 1.7;
+            background: #f9fafb;
+        }
+        a { color: #1a73e8; text-decoration: none; }
+        img { max-width: 100%; height: auto; }
+
+        /* ====== 页面容器 ====== */
+        .page {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        /* ====== 顶部导航 ====== */
+        .topbar {
+            background: #1a73e8;
+            color: #fff;
+            text-align: center;
+            padding: 12px 16px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        .topbar a { color: #fff; }
+
+        /* ====== 头部 Hero ====== */
+        .hero {
+            padding: 48px 24px 36px;
+            text-align: center;
+            background: linear-gradient(135deg, #e8f0fe 0%, #d2e3fc 50%, #e8f0fe 100%);
+        }
+        .hero .logo {
+            width: 90px; height: 90px;
+            border-radius: 50%;
+            background: #1a73e8;
+            color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .hero h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        .hero .tagline {
+            font-size: 16px;
+            color: #5f6368;
+            margin-bottom: 16px;
+        }
+        .hero .badges {
+            display: flex; flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+        .hero .badge {
+            background: #fff;
+            border: 1px solid #c4d7f2;
+            color: #1a73e8;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        .hero .cta {
+            display: inline-block;
+            background: #1a73e8;
+            color: #fff;
+            padding: 12px 36px;
+            border-radius: 28px;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 12px rgba(26,115,232,0.3);
+        }
+        .hero .cta:hover { background: #1557b0; }
+
+        /* ====== 各区块 ====== */
+        .section {
+            padding: 40px 24px;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-child { border-bottom: none; }
+        .section h2 {
+            font-size: 22px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #1a73e8;
+            display: inline-block;
+        }
+        .section h3 {
+            font-size: 17px;
+            color: #1a73e8;
+            margin: 20px 0 10px;
+        }
+
+        /* ====== 诊所简介 ====== */
+        .intro p {
+            margin-top: 16px;
+            font-size: 15px;
+            color: #555;
+        }
+        .info-row {
+            display: flex; flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 18px;
+            font-size: 14px;
+            color: #666;
+        }
+        .info-row .item {
+            display: flex; align-items: center; gap: 6px;
+        }
+        .info-row .icon { font-size: 18px; }
+
+        /* ====== 医生卡片 ====== */
+        .doctor-card {
+            display: flex;
+            gap: 16px;
+            padding: 18px;
+            margin-top: 16px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e8eaed;
+            align-items: flex-start;
+        }
+        .doctor-card .avatar {
+            width: 72px; height: 72px;
+            border-radius: 50%;
+            background: #c4d7f2;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 30px;
+            color: #1a73e8;
+            flex-shrink: 0;
+        }
+        .doctor-card .info h3 { margin: 0 0 4px; color: #1a1a1a; }
+        .doctor-card .info .title { font-size: 13px; color: #1a73e8; margin-bottom: 4px; }
+        .doctor-card .info .detail { font-size: 14px; color: #666; }
+
+        /* ====== 服务表格 ====== */
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            font-size: 14px;
+        }
+        .service-table th, .service-table td {
+            text-align: left;
+            padding: 12px 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .service-table th {
+            background: #f1f5f9;
+            font-weight: 600;
+            color: #555;
+        }
+        .service-table tr:hover { background: #fafbfc; }
+
+        /* ====== 资质区 ====== */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 14px;
+            margin-top: 16px;
+        }
+        .cert-item {
+            text-align: center;
+            padding: 18px 10px;
+            background: #f8fafc;
+            border-radius: 10px;
+            border: 1px solid #e8eaed;
+            font-size: 13px;
+            color: #555;
+        }
+        .cert-item .icon { font-size: 32px; margin-bottom: 6px; }
+
+        /* ====== FAQ ====== */
+        .faq-item {
+            margin-top: 14px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 12px;
+        }
+        .faq-item .q {
+            font-weight: 600;
+            font-size: 15px;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+        .faq-item .a {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* ====== 底部 ====== */
+        .footer {
+            padding: 32px 24px;
+            text-align: center;
+            background: #f1f5f9;
+            font-size: 13px;
+            color: #999;
+            line-height: 2;
+        }
+        .footer strong { color: #555; }
+
+        /* ====== 响应式 ====== */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 22px; }
+            .doctor-card { flex-direction: column; align-items: center; text-align: center; }
+            .section { padding: 28px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ====== 页面内容从这里开始 ====== -->
+
+<div class="page">
+
+    <!-- 顶部联系栏 -->
+    <div class="topbar">
+        📞 <strong>预约咨询：19051019977</strong> &nbsp;｜&nbsp; 🕘 营业时间：08:00-17:30（周末不休）
+    </div>
+
+    <!-- 头部 -->
+    <div class="hero">
+        <div class="logo">🦷</div>
+        <h1>丹阳值的口腔诊所</h1>
+        <p class="tagline">专注种植牙、牙齿矫正、根管治疗、儿牙治疗、活动假牙、家庭口腔健康管理</p>
+        <div class="badges">
+            <span class="badge">✅ 医疗机构执业许可</span>
+            <span class="badge">🏥 瑞士ITI种植系统认证</span>
+            <span class="badge">🎓 华西口腔进修医师</span>
+            <span class="badge">⏳ 2025年建院</span>
+        </div>
+        <a href="tel:19051019977" class="cta">📞 立即预约咨询</a>
+    </div>
+
+    <!-- 诊所简介 -->
+    <div class="section intro">
+        <h2>诊所简介</h2>
+        <p>
+            丹阳口腔诊所成立于2025年，位于丹阳市云阳街道凤凰新村 65 号。
+            本诊所秉承"精准、微创、舒适"的诊疗理念，由具有十余年口腔临床经验的医师团队领衔，
+            引进瑞士ITI种植系统、德国CBCT全景影像设备、进口显微镜根管治疗系统，
+            为每一位患者提供安全、专业的口腔诊疗服务。
+        </p>
+        <div class="info-row">
+            <div class="item"><span class="icon">📍</span>丹阳市云阳街道凤凰新村 65 号</div>
+            <div class="item"><span class="icon">📞</span> 19051019977</div>
+            <div class="item"><span class="icon">🕘</span> 08:00-17:30（周末不休）</div>
+        </div>
+    </div>
+
+    <!-- 医生团队 -->
+    <div class="section">
+        <h2>医生团队</h2>
+
+        <div class="doctor-card">
+            <div class="avatar">👨‍⚕️</div>
+            <div class="info">
+                <h3>张俊</h3>
+                <p class="title">口腔执业医师 · 临床从业十余年</p>
+                <p class="detail">
+                    XX医科大学口腔医学硕士。
+                    擅长：种植牙、全口/半口无牙颌种植修复、上颌窦提升、基础补牙、根管、简单拔牙、牙周洁治、牙冠修复。
+                    中华口腔医学会种植专委会会员。瑞士ITI种植系统认证医师。
+                </p>
+            </div>
+        </div>
+
+        
+       
+
+    <!-- 服务项目 -->
+    <div class="section">
+        <h2>服务项目</h2>
+        <table class="service-table">
+            <thead>
+                <tr><th>项目</th><th>说明</th><th>参考价格</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>种植牙</strong></td><td>瑞士ITI / 韩国奥齿泰系统，单颗/多颗/全口种植</td><td>¥88/颗</td></tr>
+                <tr><td><strong>正畸矫正</strong></td><td>传统托槽 / 陶瓷托槽 / 隐形矫正（隐适美、时代天使）</td><td>¥88</td></tr>
+                <tr><td><strong>牙齿贴面</strong></td><td>瓷贴面 / 树脂贴面，前牙美学修复</td><td>¥39/颗</td></tr>
+                <tr><td><strong>洗牙洁牙</strong></td><td>超声波洁牙 / 喷砂洁牙 / 深度牙周洁治</td><td>¥29.9/次</td></tr>
+                <tr><td><strong>拔牙</strong></td><td>普通拔牙 / 复杂智齿拔除 / 阻生牙拔除</td><td>¥10/颗</td></tr>
+                <tr><td><strong>根管治疗</strong></td><td>显微镜根管治疗 / 热牙胶充填</td><td>¥39/颗</td></tr>
+                <tr><td><strong>儿童齿科</strong></td><td>窝沟封闭 / 涂氟 / 乳牙拔除 / 早期矫治</td><td>¥29.9</td></tr>
+                <tr><td><strong>全口涂氟</strong></td><td></td><td>¥88</td></tr>
+            </tbody>
+        </table>
+        <p style="margin-top:12px; font-size:13px; color:#999;">* 以上为参考价格区间，具体费用以到院检查后方案为准。支持医保刷卡。</p>
+    </div>
+
+    <!-- 资质与设备 -->
+    <div class="section">
+        <h2>资质与设备</h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <div class="icon">📜</div>
+                医疗机构<br>执业许可证
+            </div>
+            <div class="cert-item">
+                <div class="icon">🦷</div>
+                隐适美/时代天使<br>认证机构
+            </div>
+            <div class="cert-item">
+                <div class="icon">🔬</div>
+                德国CBCT<br>全景影像设备
+            </div>
+            <div class="cert-item">
+                <div class="icon">💡</div>
+                进口显微镜<br>根管治疗系统
+            </div>
+        </div>
+    </div>
+
+    <!-- 常见问题FAQ -->
+    <div class="section">
+        <h2>常见问题</h2>
+
+        <div class="faq-item">
+            <p class="q">Q：种植牙疼不疼？</p>
+            <p class="a">A：种植牙手术在局部麻醉下进行，术中基本无痛。术后会有轻微肿胀感，通常1-3天缓解。本诊所采用微创种植技术，创伤小、恢复快。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q：种植牙能用多久？</p>
+            <p class="a">A：维护得当可使用20年以上。全球最早的种植牙患者已使用超过40年。本诊所采用瑞士ITI种植系统并提供5年质保，定期复查是延长寿命的关键。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q：正畸有年龄限制吗？</p>
+            <p class="a">A：没有严格的年龄限制。青少年是正畸黄金期，但成年人同样可以矫正。本诊所有多位30-50岁成人正畸成功案例，具体方案需到院检查后制定。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q：种植牙和烤瓷牙/固定桥有什么区别？</p>
+            <p class="a">A：种植牙独立植入牙槽骨，不损伤邻牙，咀嚼效率最接近天然牙。固定桥需要磨损两侧健康牙齿。本诊所医生会根据您的具体情况给出专业建议。</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="q">Q：你们和公立医院比有什么优势？</p>
+            <p class="a">A：预约灵活、候诊时间短、医生一对一全程负责、就诊环境舒适。同时在种植牙和正畸领域，本诊所医生拥有与公立三甲医院同等甚至更丰富的临床经验。</p>
+        </div>
+    </div>
+
+    <!-- 到院指引 -->
+    <div class="section">
+        <h2>到院指引</h2>
+        <p style="font-size:15px;">
+            📍 <strong>地址：</strong>江苏省镇江市丹阳市云阳街道凤凰新村 65 号（市南环路华南桥北红绿灯向东20米）
+        </p>
+        <p style="font-size:15px; margin-top:8px;">
+            📞 <strong>预约电话：</strong>19051019977（建议提前1天预约，减少候诊时间）
+        </p>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <p><strong>丹阳值的口腔诊所</strong></p>
+        <p>丹阳市云阳街道凤凰新村 65 号 ｜ 19051019977</p>
+        <p style="margin-top:8px;">&copy; 2025 丹阳值的口腔诊所 ｜ 本站信息仅供参考，不能作为诊断及医疗依据</p>
+    </div>
+
+</div>
+
+</body>
+</html>
